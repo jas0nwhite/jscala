@@ -3,11 +3,11 @@ package org.jscalaexample
 import jdk.nashorn.api.scripting.ScriptObjectMirror
 import org.jscala._
 import org.scalatest.{FunSuite, Matchers}
-import org.scalatest.prop.{Checkers, PropertyChecks}
+import org.scalatestplus.scalacheck.{Checkers, ScalaCheckPropertyChecks}
 
 import collection.JavaConverters._
 
-class AesTest extends FunSuite with Matchers with PropertyChecks with Checkers {
+class AesTest extends FunSuite with Matchers with ScalaCheckPropertyChecks with Checkers {
   test("test") {
     val key = Array(1, 1, 1, 1)
     forAll((d: Array[Int]) => whenever(d.size >= 4) {

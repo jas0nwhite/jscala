@@ -31,11 +31,11 @@ lazy val buildSettings = Defaults.coreDefaultSettings ++ Seq(
 )
 
 def extraPom =
-  <url>http://jscala.org</url>
+  <url>https://jscala.org</url>
     <licenses>
       <license>
         <name>MIT</name>
-        <url>http://opensource.org/licenses/MIT</url>
+        <url>https://opensource.org/licenses/MIT</url>
         <distribution>repo</distribution>
       </license>
     </licenses>
@@ -47,7 +47,7 @@ def extraPom =
       <developer>
         <id>nau</id>
         <name>Alexander Nemish</name>
-        <url>http://github.com/nau</url>
+        <url>https://github.com/nau</url>
       </developer>
     </developers>
 
